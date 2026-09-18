@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice" role="img" aria-hidden="true">
+  <defs>
+    <radialGradient id="g-retreat" cx="60%" cy="44%" r="88%">
+      <stop offset="0" stop-color="#dbe8e0"/><stop offset="1" stop-color="#9db3a6"/>
+    </radialGradient>
+    <filter id="f-retreat"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#g-retreat)"/>
+  <g fill="none" stroke="#edf4ef" stroke-width="2" transform="translate(600 440)">
+    <circle r="120" stroke-opacity=".70"/>
+    <circle r="205" stroke-opacity=".55"/>
+    <circle r="300" stroke-opacity=".40"/>
+    <circle r="405" stroke-opacity=".28"/>
+    <circle r="520" stroke-opacity=".18"/>
+    <circle r="645" stroke-opacity=".10"/>
+  </g>
+  <path d="M0 620 C 230 548 380 706 620 648 S 990 528 1200 596 L1200 900 L0 900 Z" fill="#7c9489" fill-opacity=".45"/>
+  <path d="M0 738 C 270 688 430 806 706 758 S 1020 678 1200 726 L1200 900 L0 900 Z" fill="#7c9489" fill-opacity=".75"/>
+  <circle cx="600" cy="440" r="30" fill="#d99f6a" fill-opacity=".9"/>
+  <rect width="1200" height="900" filter="url(#f-retreat)" opacity=".045"/>
+</svg>

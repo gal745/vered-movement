@@ -1,0 +1,84 @@
+/* Vered - sage, clay, warm sand and soft ink, with gentle pops of honey, terracotta, dusty blue and rose */
+:root {
+  --c-bg: #f7f3ec;
+  --c-paper: #fffdf8;
+  --c-ink: #2b2723;
+  --c-muted: #7a7168;
+  --c-line: rgba(43, 39, 35, .08);
+  --c-line-strong: rgba(43, 39, 35, .18);
+  --c-accent: #5c7d68;
+  --c-accent-ink: #44614f;
+  --c-olive: #6e8f78;
+  --c-olive-deep: #4a6257;
+  --c-gold: #cfa14e;
+  --c-night: #35302a;
+  --c-on-night: rgba(250, 246, 240, .85);
+
+  /* the pops */
+  --c-clay: #c47a56;
+  --c-teal: #6f9aa3;
+  --c-berry: #b06a80;
+
+  --font-display: "Frank Ruhl Libre", Georgia, serif;
+  --font-body: "Assistant", system-ui, sans-serif;
+
+  --radius: 14px;
+  --radius-lg: 24px;
+  --shadow-sm: 0 1px 2px rgba(43, 39, 35, .05), 0 8px 24px rgba(43, 39, 35, .05);
+  --shadow: 0 24px 60px rgba(43, 39, 35, .14);
+}
+
+/* A pop of colour behind the key words of a heading */
+.hl { background: linear-gradient(transparent 62%, color-mix(in srgb, var(--c-gold) 55%, transparent) 62%); padding-inline: .05em; }
+.hl--clay { background-image: linear-gradient(transparent 62%, color-mix(in srgb, var(--c-clay) 40%, transparent) 62%); }
+.hl--teal { background-image: linear-gradient(transparent 62%, color-mix(in srgb, var(--c-teal) 40%, transparent) 62%); }
+
+/* Each audience pillar gets its own accent */
+.pillar--olive svg { color: var(--c-olive); }
+.pillar--clay  svg { color: var(--c-clay); }
+.pillar--teal  svg { color: var(--c-teal); }
+.pillar--berry svg { color: var(--c-berry); }
+.section--night .pillar--olive svg { color: #a9c2ad; }
+.section--night .pillar--clay  svg { color: #e2a480; }
+.section--night .pillar--teal  svg { color: #9cc2c9; }
+.section--night .pillar--berry svg { color: #d6a0b0; }
+
+/* Little topic chips */
+.chips { display: flex; flex-wrap: wrap; gap: .5rem; padding: 0; margin: 0 0 1.6rem; list-style: none; }
+.chips li { font-size: .92rem; font-weight: 600; line-height: 1.2; padding: .45rem .85rem; border-radius: 999px; background: var(--c-paper); border: 1.5px solid var(--c-line-strong); }
+.section--paper .chips li { background: var(--c-bg); }
+.chips li:nth-child(4n+1) { border-color: color-mix(in srgb, var(--c-olive) 60%, transparent); }
+.chips li:nth-child(4n+2) { border-color: color-mix(in srgb, var(--c-clay) 55%, transparent); }
+.chips li:nth-child(4n+3) { border-color: color-mix(in srgb, var(--c-teal) 55%, transparent); }
+.chips li:nth-child(4n+4) { border-color: color-mix(in srgb, var(--c-berry) 50%, transparent); }
+.section--night .chips li { background: rgba(255,255,255,.06); color: #fff; }
+
+/* Offer rows: a coloured rule above each title */
+.offer h3::before { content: ""; display: block; width: 56px; height: 4px; border-radius: 2px; background: var(--c-accent); margin-bottom: .9rem; }
+.offer:nth-child(2) h3::before { background: var(--c-clay); }
+.offer:nth-child(3) h3::before { background: var(--c-teal); }
+.offer:nth-child(4) h3::before { background: var(--c-berry); }
+.offer:nth-child(5) h3::before { background: var(--c-gold); }
+
+/* Library page */
+.shelf { display: grid; gap: 1rem; }
+.shelf-item { background: var(--c-paper); border-radius: var(--radius); padding: 1.2rem 1.4rem; border-inline-start: 4px solid var(--c-olive); display: grid; gap: .35rem; }
+.section--paper .shelf-item { background: var(--c-bg); }
+.shelf-item:nth-child(4n+2) { border-inline-start-color: var(--c-clay); }
+.shelf-item:nth-child(4n+3) { border-inline-start-color: var(--c-teal); }
+.shelf-item:nth-child(4n+4) { border-inline-start-color: var(--c-berry); }
+.shelf-item h3 { font-size: 1.2rem; margin: 0; }
+.shelf-item p { margin: 0; color: var(--c-muted); font-size: 1rem; }
+.shelf-meta { font-size: .85rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--c-muted); }
+
+/* Image slot waiting for a real photo */
+.photo-slot { position: relative; }
+.photo-slot figcaption { position: absolute; inset: auto .6rem .6rem; background: rgba(27, 29, 22, .78); color: #fff; font-size: .82rem; line-height: 1.35; padding: .45rem .7rem; border-radius: 8px; }
+[data-mode="final"] .photo-slot figcaption { display: none; }
+.photo-slot { margin: 0; }
+.offer-media.photo-slot { grid-template-columns: 1fr; }
+.offer-media.photo-slot img { aspect-ratio: 16/10; }
+
+/* A warmer, slightly stronger scrim so the hero text stays readable over any photo */
+.hero::after { background: linear-gradient(180deg, rgba(45, 38, 32, .5) 0%, rgba(45, 38, 32, .22) 32%, rgba(45, 38, 32, .45) 62%, rgba(45, 38, 32, .84) 100%); }
+.page-hero::after { background: linear-gradient(180deg, rgba(45, 38, 32, .2) 15%, rgba(45, 38, 32, .78) 100%); }

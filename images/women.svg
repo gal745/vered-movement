@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice" role="img" aria-hidden="true">
+  <defs>
+    <radialGradient id="g-women" cx="48%" cy="52%" r="88%">
+      <stop offset="0" stop-color="#f0dfe3"/><stop offset="1" stop-color="#c4a3ad"/>
+    </radialGradient>
+    <filter id="f-women"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#g-women)"/>
+  <g fill="none" stroke="#f9eef1" stroke-width="2" transform="translate(480 520)">
+    <circle r="120" stroke-opacity=".70"/>
+    <circle r="205" stroke-opacity=".55"/>
+    <circle r="300" stroke-opacity=".40"/>
+    <circle r="405" stroke-opacity=".28"/>
+    <circle r="520" stroke-opacity=".18"/>
+    <circle r="645" stroke-opacity=".10"/>
+  </g>
+  <path d="M0 620 C 230 548 380 706 620 648 S 990 528 1200 596 L1200 900 L0 900 Z" fill="#a4818e" fill-opacity=".45"/>
+  <path d="M0 738 C 270 688 430 806 706 758 S 1020 678 1200 726 L1200 900 L0 900 Z" fill="#a4818e" fill-opacity=".75"/>
+  <circle cx="480" cy="520" r="30" fill="#cfa14e" fill-opacity=".9"/>
+  <rect width="1200" height="900" filter="url(#f-women)" opacity=".045"/>
+</svg>
