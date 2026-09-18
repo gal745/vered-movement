@@ -1,20 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice" role="img" aria-hidden="true">
   <defs>
-    <radialGradient id="g-library" cx="52%" cy="48%" r="85%">
-      <stop offset="0" stop-color="#7a6f48"/><stop offset="1" stop-color="#22211c"/>
+    <radialGradient id="g-library" cx="52%" cy="48%" r="88%">
+      <stop offset="0" stop-color="#ece2cf"/><stop offset="1" stop-color="#c2b49b"/>
     </radialGradient>
-    <filter id="f-library"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+    <filter id="f-library"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
   </defs>
   <rect width="1200" height="900" fill="url(#g-library)"/>
-  <g fill="none" stroke-linecap="round" transform="translate(520 480) scale(1.1)">
-    <circle r="130" stroke="#b8ab7d" stroke-opacity=".55" stroke-width="2"/>
-    <circle r="215" stroke="#b8ab7d" stroke-opacity=".40" stroke-width="2"/>
-    <circle r="310" stroke="#b8ab7d" stroke-opacity=".28" stroke-width="2"/>
-    <circle r="415" stroke="#b8ab7d" stroke-opacity=".18" stroke-width="2"/>
-    <circle r="530" stroke="#b8ab7d" stroke-opacity=".11" stroke-width="2"/>
+  <g fill="none" stroke="#f6f0e4" stroke-width="2" transform="translate(520 480)">
+    <circle r="120" stroke-opacity=".70"/>
+    <circle r="205" stroke-opacity=".55"/>
+    <circle r="300" stroke-opacity=".40"/>
+    <circle r="405" stroke-opacity=".28"/>
+    <circle r="520" stroke-opacity=".18"/>
+    <circle r="645" stroke-opacity=".10"/>
   </g>
-  <path d="M0 640 C 220 560 360 720 600 660 S 980 540 1200 610 L1200 900 L0 900 Z" fill="#4c4530" fill-opacity=".85"/>
-  <path d="M0 740 C 260 690 420 810 700 760 S 1020 680 1200 730 L1200 900 L0 900 Z" fill="#22211c" fill-opacity=".9"/>
-  <circle cx="520" cy="480" r="34" fill="#3f7d8c"/>
-  <rect width="1200" height="900" filter="url(#f-library)" opacity=".05"/>
+  <path d="M0 620 C 230 548 380 706 620 648 S 990 528 1200 596 L1200 900 L0 900 Z" fill="#a0937c" fill-opacity=".45"/>
+  <path d="M0 738 C 270 688 430 806 706 758 S 1020 678 1200 726 L1200 900 L0 900 Z" fill="#a0937c" fill-opacity=".75"/>
+  <circle cx="520" cy="480" r="30" fill="#6f9aa3" fill-opacity=".9"/>
+  <rect width="1200" height="900" filter="url(#f-library)" opacity=".045"/>
 </svg>

@@ -1,31 +1,31 @@
-/* Vered - forest, bark, bone white and black, with small pops of amber, clay, teal and berry */
+/* Vered - sage, clay, warm sand and soft ink, with gentle pops of honey, terracotta, dusty blue and rose */
 :root {
-  --c-bg: #f4f2ec;
-  --c-paper: #fbfaf6;
-  --c-ink: #14150f;
-  --c-muted: #5c5f52;
-  --c-line: rgba(20, 21, 15, .09);
-  --c-line-strong: rgba(20, 21, 15, .2);
-  --c-accent: #4a6b3a;
-  --c-accent-ink: #344d29;
-  --c-olive: #7d8c52;
-  --c-olive-deep: #2f3d26;
-  --c-gold: #d2a03c;
-  --c-night: #1b1d16;
-  --c-on-night: rgba(244, 242, 236, .82);
+  --c-bg: #f7f3ec;
+  --c-paper: #fffdf8;
+  --c-ink: #2b2723;
+  --c-muted: #7a7168;
+  --c-line: rgba(43, 39, 35, .08);
+  --c-line-strong: rgba(43, 39, 35, .18);
+  --c-accent: #5c7d68;
+  --c-accent-ink: #44614f;
+  --c-olive: #6e8f78;
+  --c-olive-deep: #4a6257;
+  --c-gold: #cfa14e;
+  --c-night: #35302a;
+  --c-on-night: rgba(250, 246, 240, .85);
 
   /* the pops */
-  --c-clay: #c2622d;
-  --c-teal: #3f7d8c;
-  --c-berry: #a23c5a;
+  --c-clay: #c47a56;
+  --c-teal: #6f9aa3;
+  --c-berry: #b06a80;
 
   --font-display: "Frank Ruhl Libre", Georgia, serif;
   --font-body: "Assistant", system-ui, sans-serif;
 
-  --radius: 12px;
-  --radius-lg: 20px;
-  --shadow-sm: 0 1px 2px rgba(20, 21, 15, .06), 0 8px 24px rgba(20, 21, 15, .06);
-  --shadow: 0 24px 60px rgba(20, 21, 15, .18);
+  --radius: 14px;
+  --radius-lg: 24px;
+  --shadow-sm: 0 1px 2px rgba(43, 39, 35, .05), 0 8px 24px rgba(43, 39, 35, .05);
+  --shadow: 0 24px 60px rgba(43, 39, 35, .14);
 }
 
 /* A pop of colour behind the key words of a heading */
@@ -38,10 +38,10 @@
 .pillar--clay  svg { color: var(--c-clay); }
 .pillar--teal  svg { color: var(--c-teal); }
 .pillar--berry svg { color: var(--c-berry); }
-.section--night .pillar--olive svg { color: #b9c98a; }
-.section--night .pillar--clay  svg { color: #e79a5e; }
-.section--night .pillar--teal  svg { color: #7fb8c6; }
-.section--night .pillar--berry svg { color: #d98aa3; }
+.section--night .pillar--olive svg { color: #a9c2ad; }
+.section--night .pillar--clay  svg { color: #e2a480; }
+.section--night .pillar--teal  svg { color: #9cc2c9; }
+.section--night .pillar--berry svg { color: #d6a0b0; }
 
 /* Little topic chips */
 .chips { display: flex; flex-wrap: wrap; gap: .5rem; padding: 0; margin: 0 0 1.6rem; list-style: none; }
@@ -78,3 +78,7 @@
 .photo-slot { margin: 0; }
 .offer-media.photo-slot { grid-template-columns: 1fr; }
 .offer-media.photo-slot img { aspect-ratio: 16/10; }
+
+/* A warmer, slightly stronger scrim so the hero text stays readable over any photo */
+.hero::after { background: linear-gradient(180deg, rgba(45, 38, 32, .5) 0%, rgba(45, 38, 32, .22) 32%, rgba(45, 38, 32, .45) 62%, rgba(45, 38, 32, .84) 100%); }
+.page-hero::after { background: linear-gradient(180deg, rgba(45, 38, 32, .2) 15%, rgba(45, 38, 32, .78) 100%); }
