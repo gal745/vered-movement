@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice" role="img" aria-hidden="true">
+  <defs>
+    <radialGradient id="g-studio" cx="40%" cy="60%" r="85%">
+      <stop offset="0" stop-color="#8a7445"/><stop offset="1" stop-color="#2a2419"/>
+    </radialGradient>
+    <filter id="f-studio"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#g-studio)"/>
+  <g fill="none" stroke-linecap="round" transform="translate(400 600) scale(1.1)">
+    <circle r="130" stroke="#c0a86e" stroke-opacity=".55" stroke-width="2"/>
+    <circle r="215" stroke="#c0a86e" stroke-opacity=".40" stroke-width="2"/>
+    <circle r="310" stroke="#c0a86e" stroke-opacity=".28" stroke-width="2"/>
+    <circle r="415" stroke="#c0a86e" stroke-opacity=".18" stroke-width="2"/>
+    <circle r="530" stroke="#c0a86e" stroke-opacity=".11" stroke-width="2"/>
+  </g>
+  <path d="M0 640 C 220 560 360 720 600 660 S 980 540 1200 610 L1200 900 L0 900 Z" fill="#5a4a30" fill-opacity=".85"/>
+  <path d="M0 740 C 260 690 420 810 700 760 S 1020 680 1200 730 L1200 900 L0 900 Z" fill="#2a2419" fill-opacity=".9"/>
+  <circle cx="400" cy="600" r="34" fill="#9bb14f"/>
+  <rect width="1200" height="900" filter="url(#f-studio)" opacity=".05"/>
+</svg>
