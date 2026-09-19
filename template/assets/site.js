@@ -39,11 +39,17 @@
   }
 
   // Reveal on scroll
-  if ('IntersectionObserver' in window) {
+  if ("IntersectionObserver" in window) {
+    var ioFired = false;
     var io = new IntersectionObserver(function (entries) {
+      ioFired = true;
       entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('is-in'); io.unobserve(en.target); } });
     }, { rootMargin: '0px 0px -8% 0px' });
     document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+    // If the observer never reports back (some in-app browsers), show everything rather than nothing.
+    setTimeout(function () {
+      if (!ioFired) document.querySelectorAll(".reveal").forEach(function (el) { el.classList.add("is-in"); });
+    }, 3000);
   } else {
     document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-in'); });
   }
