@@ -11,14 +11,18 @@ Ordered roughly by how much it blocks going live.
 - **Reviews.** The reviews section is empty. 3–6 quotes from real clients: first name, age or occupation,
   which kind of session, and one or two sentences on what changed. Screenshots of WhatsApp or Instagram
   replies are fine — but she needs each person's OK to publish it.
-- **Photos.** Every photo slot is filled with artwork right now. Needed:
-  - a portrait of her (the single most important image on the site)
-  - a private session, one-to-one, ideally outdoors
+- **Photos.** Four slots now use photos recovered from her old Wix site (the studio, her hanging from an
+  olive branch, a barefoot older walker, a boy climbing an olive tree). She needs to confirm we may use
+  each of them - including the parents' agreement for the child, and the older walker's agreement.
+  Higher-resolution originals would be better: these are 716-1024px, fine in a column but not for a
+  full-bleed hero. Still missing entirely:
+  - a wide opening photo or a short video for the top of the page (the one big gap - nothing recovered
+    is wide or sharp enough)
+  - a private session, one-to-one
   - a group workshop in the garden at Ein Hod
   - the women's group
   - a talk to an older-adults group
-  - the studio, inside and outside
-  - a wide opening photo or a short video for the top of the page
+  - a better portrait of her, if one exists
 - **Prices.** ₪250 for the introduction and assessment, ₪200 for follow-ups, ~90 minutes — those came off
   the old site and may be years out of date. Confirm, and add prices (or "from ₪X") for:
   the balance talk, the weekly women's group, the monthly workshop, group and teacher workshops, the retreat.

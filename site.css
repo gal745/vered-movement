@@ -297,3 +297,7 @@ a.card:hover .card-media img { transform: none; }
 .brand-sub { font-size: .95rem; }
 /* over the hero photo the brand tagline is white, so give it full strength */
 .page-home .site-header:not(.is-solid) .brand-sub { color: rgba(255, 255, 255, .92); }
+
+/* Real photos have their own shapes; these slots follow the photo, not the grid */
+#seniors .offer-media.photo-slot img { aspect-ratio: 3/4; }
+#idea .split-media.split-media--land img { aspect-ratio: 4/3; }
