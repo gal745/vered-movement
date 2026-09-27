@@ -1,0 +1,65 @@
+# Builds the site and publishes it to https://gal745.github.io/vered-movement/
+#
+# Runs on every push to main, so the site can be updated from a phone:
+# edit a file on github.com (or with Claude Code on the web), commit, done.
+#
+# To publish the clean version with no yellow review marks, run this workflow
+# manually from the Actions tab and choose "final".
+name: Build and publish
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "preview keeps the yellow review marks; final is the clean site"
+        type: choice
+        options: [preview, final]
+        default: preview
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build the site
+        run: |
+          if [ "${{ github.event.inputs.mode }}" = "final" ]; then
+            perl build.pl --final
+            rm -rf dist && mv dist-final dist
+          else
+            perl build.pl
+          fi
+
+      - name: Check every page was written
+        run: |
+          for f in index.html library.html accessibility.html en/index.html en/library.html en/accessibility.html; do
+            test -s "dist/$f" || { echo "missing or empty: dist/$f"; exit 1; }
+          done
+          ls -la dist
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -41,6 +41,21 @@ perl build.pl --final
 
 That writes `dist-final/` with no highlights, no preview bar, and search engines allowed.
 
+## Working from a phone
+
+The site rebuilds itself. Push anything to `main` and GitHub Actions runs `build.pl` and
+publishes the result, so no computer is needed to update it:
+
+- **Claude Code on the web** (claude.ai/code) - open the `gal745/vered-movement` repo and ask for
+  the change in plain language. This is the easy one for text edits and adding photos.
+- **github.com on a phone browser** - open a file, tap the pencil, commit. Good for a quick typo.
+- **The GitHub mobile app** - same, plus you can watch the build finish.
+
+The build takes about a minute. Watch it under the repo's **Actions** tab.
+
+To publish the clean version with no yellow review marks, go to **Actions -> Build and publish ->
+Run workflow** and choose `final`.
+
 ## Preview locally
 
 ```bash
@@ -49,15 +64,14 @@ powershell -File serve.ps1 -Root dist -Port 8790
 
 Then open http://localhost:8790/ (Hebrew) or http://localhost:8790/en/ (English).
 
-## Put it online (free)
+## Put it online
 
-1. Go to https://app.netlify.com/drop and sign in.
-2. Drag the `dist` folder onto the page.
-3. You get a link like `https://random-name.netlify.app`. In Site settings you can rename it
-   (e.g. `vered-movement.netlify.app`) or connect a real domain later.
-4. To update: rebuild, then drag the folder again in the site's **Deploys** tab.
+Already online at <https://gal745.github.io/vered-movement/>, published by `.github/workflows/deploy.yml`
+on every push to `main`. The preview build is `noindex`, so Google will not list it until the site is
+built in `final` mode.
 
-After the site gets its real address, update `site_url` in `site.conf` and rebuild.
+If the site later gets a real domain, update `site_url` in `site.conf` and point the domain at GitHub
+Pages.
 
 ## Pages
 
