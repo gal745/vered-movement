@@ -301,3 +301,16 @@ a.card:hover .card-media img { transform: none; }
 /* Real photos have their own shapes; these slots follow the photo, not the grid */
 #seniors .offer-media.photo-slot img { aspect-ratio: 3/4; }
 #idea .split-media.split-media--land img { aspect-ratio: 4/3; }
+
+/* ---------- Her logo ---------- */
+/* Her mark is a linocut printed on cream paper (#f1ede1); the page bone is nudged
+   toward it so the logo tile sits on the page instead of on top of it. */
+:root { --c-bg: #f5f2e9; }
+.brand img, .footer-brand img { border-radius: 2px; }
+.footer-brand img { width: 76px; height: 88px; object-fit: cover; }
+
+/* A short aside in her own words, pulled from her posts */
+.aside-note { border-inline-start: 2px solid var(--c-accent); padding: .2rem 0 .2rem 0; padding-inline-start: 1.2rem; margin: 0 0 1.6rem; }
+.aside-note p { font-size: 1.05rem; color: var(--c-muted); margin: 0 0 .5em; }
+.aside-note p:last-child { margin: 0; }
+.aside-note strong { color: var(--c-ink); font-weight: 600; }

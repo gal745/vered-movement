@@ -25,14 +25,16 @@ Ordered roughly by how much it blocks going live.
   - a better portrait of her, if one exists
 - **Prices.** ₪250 for the introduction and assessment, ₪200 for follow-ups, ~90 minutes — those came off
   the old site and may be years out of date. Confirm, and add prices (or "from ₪X") for:
-  the balance talk, the weekly women's group, the monthly workshop, group and teacher workshops, the retreat.
+  the balance talk, the monthly workshop, group and teacher workshops, and the retreat. (The weekly
+  women's group is now answered: ₪35 taster, ₪222 a month.)
 - **Payment and cancellation.** How does she take payment (cash / Bit / transfer / card), does she issue an
   invoice, and what is the cancellation policy? The FAQ has an empty answer waiting.
 
 ## 2. Details that are currently assumptions
 
-- **The women's group.** Instagram says Monday mornings. What time, where, is it open to new joiners,
-  and is it per-session or a subscription?
+- ~~**The women's group.**~~ Answered by her own poster: Mondays 08:30-09:30 at Beit Gertrude, Ein Hod;
+  ₪35 taster, ₪222 a month. The poster is from July, so confirm it still holds for the current season.
+  There is also a women-only WhatsApp group - confirm the invite link is still open.
 - **The monthly workshop.** Is it still running monthly? The old site's dates stopped at 2022.
 - **The balance talk for older adults.** How long is it, what's the maximum group size, how far will she
   travel, and does she do a series as well as a single session?
@@ -61,11 +63,31 @@ The page is built with the sections but no content. Ask her for:
 
 - **Domain.** Is `vered-movement.netlify.app` fine to start with, or does she want to buy a domain
   (e.g. `veredmovement.co.il`)? Who pays and who owns it?
-- **Business name.** The site leads with her own name plus "תנועה טבעית". Instagram uses
-  "microdosing movement", the studio is "Micro Movement Studio", the old site was "תנועתיות".
-  Worth settling on one so the branding stops splitting.
+- **Business name.** Partly answered: she has a real logo reading "תנועה טבעית", and signs herself
+  "ורד גוטרייך | מאמנת לתנועה טבעית ותפקודית בחיים | Micro Dosing Movement". The site now follows that.
+  Still worth settling the English spelling, which appears as both "Micro Dosing" and "microdosing",
+  and whether "Micro Movement Studio" stays a separate name for the retreat.
 - **The old Wix site.** Take it down, or point it at the new one?
 - **YouTube.** The channel (`vered108`) is from her yoga years. Keep the link on the library page or drop it?
 - **Facebook.** The link goes to her personal profile, not a business page. Is that what she wants?
 - **Booking.** Everything goes through WhatsApp right now. Does she want an online calendar later?
 - **Updates.** Who edits the site when a workshop date changes — her, or you on a retainer?
+
+## 5. Material already pulled in (2026-09-27)
+
+From her old Wix site: four photos (her hanging from an olive branch, the studio interior, a barefoot
+older walker, a boy climbing an olive tree). Each still needs her permission, and consent from the
+child's parents and the walker.
+
+From the Facebook posts supplied: her **logo** (now the site's mark, favicon and share image), the
+women's-group details, her tagline "אימונים קצרים וממוקדים, המפוזרים לאורך כל היום", her professional
+title, the WhatsApp group link, and the "sock test" balance piece, which is now a short aside in the
+balance section.
+
+Still worth asking her for:
+
+- the **original** of the olive-tree photo from her 5 July post - it would make a good opening image,
+  but the copy taken from a screenshot is far too small
+- whether the "Micro-Dosing Movement" video that title card came from can be used on the site
+- the source file for her logo, ideally vector or a large PNG on a transparent background; the current
+  one is a screenshot of a JPEG and has the paper texture baked in
